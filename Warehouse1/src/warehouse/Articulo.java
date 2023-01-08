@@ -77,8 +77,7 @@ public class Articulo {
 	public void disminuirStock(int cantidad) {
 		if (cantidad <= this.stock) {
 			this.stock -= cantidad;
-			System.out.println("El articulo " + this.name + " reducio su cantidad en " + cantidad
-					+ " unidades, unidades restanes: " + this.stock);
+			System.out.println("El articulo " + this.name + " ha reducido su cantidad");
 		} else {
 			System.out.println("No se ha podido disminuir la cantidad seleccionada");
 		}
