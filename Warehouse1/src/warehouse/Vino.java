@@ -7,9 +7,9 @@ public class Vino extends Articulo {
 	private int año;
 	private String tipoUva;
 	private double gradosAlcohol;
-	
+
 	public Vino() {
-		
+
 	}
 
 	public Vino(String color, String origen, int anio, String tipoUva, double gradosAlcohol) {
@@ -62,9 +62,9 @@ public class Vino extends Articulo {
 	}
 
 	public boolean esFuerte() {
-		if (this.gradosAlcohol > 13.5) 
+		if (this.gradosAlcohol > 13.5)
 			return true;
-		
+
 		return false;
 	}
 

@@ -6,10 +6,10 @@ public class Cerveza extends Articulo {
 	private String cereales;
 	private double gradosAlcohol;
 
-    public Cerveza() {
-		
+	public Cerveza() {
+
 	}
-	
+
 	public Cerveza(String origen, String cereales, double gradosAlcohol) {
 		this.origen = origen;
 		this.cereales = cereales;
@@ -39,13 +39,12 @@ public class Cerveza extends Articulo {
 	public void setGradosAlcohol(double gradosAlcohol) {
 		this.gradosAlcohol = gradosAlcohol;
 	}
-	
+
 	public boolean esFuerte() {
-		if (this.gradosAlcohol > 7) 
+		if (this.gradosAlcohol > 7)
 			return true;
-		
+
 		return false;
 	}
 
-	
 }
