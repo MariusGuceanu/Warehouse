@@ -1,10 +1,10 @@
 package warehouse;
 
-public class Vino extends Articulo {
+public class Vino extends Articulo implements Alcoholico {
 
 	private String color;
 	private String origen;
-	private int año;
+	private int años;
 	private String tipoUva;
 	private double gradosAlcohol;
 
@@ -16,7 +16,7 @@ public class Vino extends Articulo {
 
 		this.color = color;
 		this.origen = origen;
-		this.año = anio;
+		this.años = años;
 		this.tipoUva = tipoUva;
 		this.gradosAlcohol = gradosAlcohol;
 	}
@@ -37,12 +37,12 @@ public class Vino extends Articulo {
 		this.origen = origen;
 	}
 
-	public int getAño() {
-		return año;
+	public int getAños() {
+		return años;
 	}
 
-	public void setAnio(int anio) {
-		this.año = anio;
+	public void setAños(int años) {
+		this.años = años;
 	}
 
 	public String getTipoUva() {
@@ -60,12 +60,20 @@ public class Vino extends Articulo {
 	public void setGradosAlcohol(double gradosAlcohol) {
 		this.gradosAlcohol = gradosAlcohol;
 	}
+	public void visualizarPropiedades() {
+		System.out.println("Su color es, " + this.color + "tiene " + this.gradosAlcohol + "grados de alcohol, " + "y tiene unos  " + this.años + "años");
+	}
 
 	public boolean esFuerte() {
 		if (this.gradosAlcohol > 13.5)
 			return true;
 
 		return false;
+	}
+
+	public double calcularTasa() {
+		
+		return 0;
 	}
 
 }

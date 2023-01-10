@@ -1,6 +1,6 @@
 package warehouse;
 
-public class Articulo {
+abstract class Articulo {
 
 	private String code;
 	private String name;
@@ -84,7 +84,7 @@ public class Articulo {
 	}
 
 	public void visualizarArticulo() {
-
+		System.out.println("Que articulos quieres visualizar?");
 	}
 
 	public void precioTotal() {

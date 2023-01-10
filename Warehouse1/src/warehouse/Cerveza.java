@@ -1,6 +1,6 @@
 package warehouse;
 
-public class Cerveza extends Articulo {
+public class Cerveza extends Articulo implements Alcoholico {
 
 	private String origen;
 	private String cereales;
@@ -45,6 +45,11 @@ public class Cerveza extends Articulo {
 			return true;
 
 		return false;
+	}
+
+	public double calcularTasa() {
+		
+		return 0;
 	}
 
 }
