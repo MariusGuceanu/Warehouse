@@ -60,8 +60,10 @@ public class Vino extends Articulo implements Alcoholico {
 	public void setGradosAlcohol(double gradosAlcohol) {
 		this.gradosAlcohol = gradosAlcohol;
 	}
+
 	public void visualizarPropiedades() {
-		System.out.println("Su color es, " + this.color + "tiene " + this.gradosAlcohol + "grados de alcohol, " + "y tiene unos  " + this.años + "años");
+		System.out.println("Su color es, " + this.color + "tiene " + this.gradosAlcohol + "grados de alcohol, "
+				+ "y tiene unos  " + this.años + "años");
 	}
 
 	public boolean esFuerte() {
@@ -72,8 +74,9 @@ public class Vino extends Articulo implements Alcoholico {
 	}
 
 	public double calcularTasa() {
-		
+
 		return 0;
+
 	}
 
 }

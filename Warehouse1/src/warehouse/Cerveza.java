@@ -48,7 +48,7 @@ public class Cerveza extends Articulo implements Alcoholico {
 	}
 
 	public double calcularTasa() {
-		
+
 		return 0;
 	}
 

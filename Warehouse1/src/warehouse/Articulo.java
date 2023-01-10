@@ -85,6 +85,7 @@ abstract class Articulo {
 
 	public void visualizarArticulo() {
 		System.out.println("Que articulos quieres visualizar?");
+
 	}
 
 	public void precioTotal() {
