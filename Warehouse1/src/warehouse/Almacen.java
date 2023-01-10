@@ -13,12 +13,11 @@ public class Almacen {
 	}
 
 
-
 	public void setArticulos(ArrayList<Articulo> articulos) {
 		this.articulos = articulos;
 	}
 
-
+	
 
 	public void cargarDatos() {
 
